@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.6.0" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Upload\" />
+    <Folder Include="wwwroot\image\" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\grupocinte.Application.DTO\grupocinte.Application.DTO.csproj" />
+    <ProjectReference Include="..\grupocinte.Application.Interface\grupocinte.Application.Interface.csproj" />
+    <ProjectReference Include="..\grupocinte.Application.Main\grupocinte.Application.Main.csproj" />
+    <ProjectReference Include="..\grupocinte.Domain.Core\grupocinte.Domain.Core.csproj" />
+    <ProjectReference Include="..\grupocinte.Domain.Entity\grupocinte.Domain.Entity.csproj" />
+    <ProjectReference Include="..\grupocinte.Domain.Interface\grupocinte.Domain.Interface.csproj" />
+    <ProjectReference Include="..\grupocinte.InfraStructure.Data\grupocinte.InfraStructure.Data.csproj" />
+    <ProjectReference Include="..\grupocinte.InfraStructure.Interface\grupocinte.InfraStructure.Interface.csproj" />
+    <ProjectReference Include="..\grupocinte.InfraStructure.Repository\grupocinte.InfraStructure.Repository.csproj" />
+    <ProjectReference Include="..\grupocinte.Transversal.Common\grupocinte.Transversal.Common.csproj" />
+    <ProjectReference Include="..\grupocinte.Transversal.Logging\grupocinte.Transversal.Logging.csproj" />
+    <ProjectReference Include="..\grupocinte.Transversal.Mapper\grupocinte.Transversal.Mapper.csproj" />
+  </ItemGroup>
+  <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+  
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+</Project>

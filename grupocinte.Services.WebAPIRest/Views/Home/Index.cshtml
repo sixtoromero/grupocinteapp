@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewData["Title"] = "Bienvenido Crea tu usuario";
+}
+<div class="container">
+    <h2>Registro de usuarios</h2>
+    <form id="frmUsers">
+        
+        <input type="text" style="display: none;" id="txtIDUsuario">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="txtNombres">* Nombres:</label>
+                    <input type="text" class="form-control" id="txtNombres" placeholder="Registre sus nombres" name="Nombres" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="txtApellidos">* Apellidos:</label>
+                    <input type="text" class="form-control" id="txtApellidos" placeholder="Registre sus apellidos" name="Apellidos" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="cboTipoId">* Tipo de Identificación:</label>
+                    <select class="form-control" id="cboTipoId" required>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="txtNumero">* Número de Identificación:</label>
+                    <input type="text" class="form-control" id="txtNumero" placeholder="Registre el número de identificación" name="Nombres" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="txtCorreo">* Correo:</label>
+                    <input type="email" class="form-control" id="txtCorreo" placeholder="Registre su correo electrónico" name="Contrasena" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="txtContrasena">* Contraseña:</label>
+                    <input type="password" min="5" maxlength="20" class="form-control" id="txtContrasena" placeholder="Registre su contraseña" name="Contrasena" required>
+                </div>
+            </div>
+        </div>
+        <div class="text-right">
+            <button type="button" class="btn btn-success" onclick="InsertUsuarios();">Guardar</button>
+        </div>
+    </form>
+    <hr />
+    <table class="table table-striped table-bordered table-hover dataTables-example" id="GridUsuarios">
+        <thead>
+            <tr>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Correo</th>
+                <th></th>
+            </tr>
+        </thead>
+    </table>
+
+</div>

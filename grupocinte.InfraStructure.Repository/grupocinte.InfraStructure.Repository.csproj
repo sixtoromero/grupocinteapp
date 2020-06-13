@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.30" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\grupocinte.Domain.Entity\grupocinte.Domain.Entity.csproj" />
+    <ProjectReference Include="..\grupocinte.InfraStructure.Interface\grupocinte.InfraStructure.Interface.csproj" />
+    <ProjectReference Include="..\grupocinte.Transversal.Common\grupocinte.Transversal.Common.csproj" />
+  </ItemGroup>
+
+</Project>

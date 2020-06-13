@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\grupocinte.Application.DTO\grupocinte.Application.DTO.csproj" />
+    <ProjectReference Include="..\grupocinte.Transversal.Common\grupocinte.Transversal.Common.csproj" />
+  </ItemGroup>
+
+</Project>
